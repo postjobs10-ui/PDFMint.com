@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PDFMint — simple, secure online PDF tools to merge, split, rotate, convert and manage documents.">
+<title>PDFMint — All PDF Tools in One Place</title>
+<style>
+:root{--red:#f5222d;--red2:#d71920;--saffron:#ff9933;--green:#138808;--ink:#111827;--muted:#5c6680;--line:#e8edf4;--bg:#f7f9fc;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}button,input,select{font:inherit}button{cursor:pointer}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--line);gap:20px;position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);z-index:5}.brand{display:flex;align-items:center;gap:10px;font-size:27px;font-weight:850;letter-spacing:-1px;white-space:nowrap}.brand b{color:var(--red)}.logo{width:35px;height:40px;background:linear-gradient(180deg,var(--saffron) 0 33%,#fff 33% 66%,var(--green) 66%);border-radius:7px 7px 9px 7px;display:grid;place-items:center;color:var(--red);font-size:22px;clip-path:polygon(0 0,68% 0,100% 28%,100% 100%,0 100%);border:1px solid #e9e9e9}.navlinks{display:flex;align-items:center;gap:28px}.navlinks a{color:#172033;text-decoration:none;font-size:14px}.navright{display:flex;align-items:center;gap:10px}.btn{border:0;border-radius:10px;padding:12px 19px;font-weight:700;transition:.18s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--red);color:#fff;box-shadow:0 7px 18px #f5222d26}.primary:hover{background:var(--red2)}.outline{background:#fff;border:1px solid #dce3ee;color:#172033}.mobile-menu{display:none}.hero{background:linear-gradient(110deg,#fff8ef 0%,#ffffff 48%,#f2fff2 100%);padding:48px 20px 44px;text-align:center;position:relative;overflow:hidden}.hero h1{font-size:clamp(32px,4vw,49px);letter-spacing:-1.8px;line-height:1.1;margin:0 0 12px}.hero h1 span{color:var(--red)}.india-badge{display:inline-flex;align-items:center;gap:8px;background:#ffffffd9;border:1px solid #e7eadf;border-radius:99px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:.2px;margin-bottom:16px;color:#263326}.flag-mark{display:inline-flex;flex-direction:column;width:20px;height:13px;border-radius:2px;overflow:hidden;border:1px solid #ddd}.flag-mark i{display:block;flex:1}.flag-mark i:nth-child(1){background:#ff9933}.flag-mark i:nth-child(2){background:#fff}.flag-mark i:nth-child(3){background:#138808}.india-strip{background:linear-gradient(90deg,#ff9933 0 33.33%,#fff 33.33% 66.66%,#138808 66.66%);height:4px;width:100%}.hero p{font-size:17px;color:#313b52;margin:0 auto 24px;max-width:850px}.upload-main{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}.upload-btn{font-size:16px;padding:16px 28px;min-width:245px}.drop-note{font-size:13px;color:#59637a;margin-top:12px}.cloudbtn{width:48px;height:48px;border:1px solid #fff;background:#ffffffc9;border-radius:12px;font-size:22px}.hero-art{position:absolute;right:5%;bottom:24px;font-size:90px;opacity:.12;transform:rotate(-8deg);pointer-events:none}.section{max-width:1280px;margin:0 auto;padding:28px 24px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:18px}.section h2{font-size:24px;margin:0 0 5px;letter-spacing:-.5px}.section-head p{margin:0;color:var(--muted);font-size:14px}.search{border:1px solid #dfe5ee;border-radius:10px;padding:11px 14px;min-width:240px;outline:none}.search:focus{border-color:#ff8c91;box-shadow:0 0 0 3px #f5222d12}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.filter{border:1px solid var(--line);background:#fff;color:#536078;border-radius:99px;padding:8px 14px;font-size:13px}.filter.active{background:#fff0f0;border-color:#ffc7ca;color:#d71920;font-weight:700}.tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.tool{border:1px solid var(--line);border-radius:13px;padding:16px 15px;display:flex;gap:13px;align-items:flex-start;background:#fff;text-align:left;min-height:126px;transition:.18s;box-shadow:0 2px 8px #15264a03}.tool:hover{border-color:#ffc0c3;box-shadow:0 8px 24px #18294c0c;transform:translateY(-2px)}.tool-icon{width:42px;height:42px;flex:0 0 42px;border-radius:10px;display:grid;place-items:center;font-size:21px;font-weight:800;color:white;background:var(--c)}.tool h3{font-size:14px;margin:2px 0 6px}.tool p{font-size:12px;color:var(--muted);line-height:1.45;margin:0}.trust{max-width:1280px;margin:0 auto 22px;padding:0 24px}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:14px;padding:18px 10px;background:linear-gradient(110deg,#fff,#fbfcff)}.trust-item{display:flex;align-items:center;gap:13px;padding:0 18px;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-icon{font-size:28px;color:#536078}.trust-item strong{display:block;font-size:13px;margin-bottom:4px}.trust-item span{font-size:12px;color:var(--muted);line-height:1.4}.footer{border-top:1px solid var(--line);background:#fafbfd;padding:32px max(24px,calc((100vw - 1240px)/2));display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.5fr;gap:26px}.footer h4{margin:0 0 12px;font-size:13px}.footer a{display:block;color:var(--muted);text-decoration:none;font-size:12px;margin:7px 0}.footer p{color:var(--muted);font-size:12px;line-height:1.6}.footer input{min-width:0;width:100%;padding:11px;border:1px solid #dfe5ee;border-radius:8px;margin-bottom:8px}.footer .btn{width:100%;padding:10px}.fineprint{text-align:center;color:#7b8498;font-size:11px;padding:14px;border-top:1px solid var(--line);background:#fafbfd}
+.modal-backdrop{display:none;position:fixed;inset:0;background:#11182788;z-index:10;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.modal{width:min(600px,100%);max-height:90vh;overflow:auto;background:white;border-radius:18px;padding:25px;box-shadow:0 25px 80px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.modal h2{margin:0;font-size:23px}.close{border:0;background:#f2f4f8;border-radius:9px;width:36px;height:36px;font-size:20px}.modal-desc{color:var(--muted);font-size:14px}.dropzone{border:2px dashed #d9e1ed;background:#fafcff;border-radius:13px;text-align:center;padding:28px 16px;margin:18px 0}.dropzone.drag{background:#fff0f0;border-color:var(--red)}.dropzone .big{font-size:34px}.files-list{display:grid;gap:8px;margin:12px 0}.file-row{display:flex;align-items:center;gap:10px;background:#f7f9fc;padding:10px 12px;border-radius:9px;font-size:13px}.file-row .fname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}.file-row button{border:0;background:transparent;color:#c21d26;font-size:18px}.options{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.options label{font-size:13px;color:#48536b}.options input,.options select{border:1px solid #dfe5ee;border-radius:8px;padding:9px;max-width:100%}.status{font-size:13px;color:#48536b;margin:10px 0;min-height:18px}.status.error{color:#c21d26}.status.success{color:#14804a}.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.small-note{font-size:11px;color:#7b8498;line-height:1.5;margin-top:12px}.hidden{display:none!important}
+@media(max-width:1000px){.navlinks{gap:14px}.tools{grid-template-columns:repeat(3,minmax(0,1fr))}.footer{grid-template-columns:repeat(3,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr);gap:18px}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(3),.trust-item:nth-child(4){padding-top:12px;border-top:1px solid var(--line)}}@media(max-width:720px){.nav{height:60px;padding:0 16px}.navlinks{display:none}.navright .outline{display:none}.mobile-menu{display:block;background:white;border:1px solid var(--line);border-radius:8px;padding:8px}.brand{font-size:23px}.hero{padding:40px 18px}.hero-art{display:none}.hero p{font-size:15px}.section{padding:24px 16px}.section-head{align-items:stretch;flex-direction:column}.search{width:100%;min-width:0}.tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.tool{padding:12px;display:block;min-height:145px}.tool-icon{margin-bottom:10px}.tool p{font-size:11px}.trust{padding:0 16px}.trust-grid{grid-template-columns:1fr;padding:12px}.trust-item{border-right:0;border-bottom:1px solid var(--line);padding:12px!important;border-top:0!important}.trust-item:last-child{border-bottom:0}.footer{padding:28px 18px;grid-template-columns:repeat(2,1fr);gap:20px}.footer>div:first-child,.footer>div:last-child{grid-column:1/-1}}@media(max-width:380px){.tools{grid-template-columns:1fr}.tool{display:flex;min-height:0}.tool-icon{margin:0}}
+</style>
+</head>
+<body>
+<div class="india-strip" aria-hidden="true"></div><header class="nav">
+  <a class="brand" href="#" aria-label="PDFMint home" style="text-decoration:none;color:inherit"><span class="logo">▰</span><span>PDF<span style="color:var(--red)">Mint</span></span></a>
+  <nav class="navlinks"><a href="#tools">Merge PDF</a><a href="#tools">Split PDF</a><a href="#tools">Compress PDF</a><a href="#tools">Convert PDF⌄</a><a href="#tools">All PDF Tools⌄</a></nav>
+  <div class="navright"><button class="btn outline" onclick="scrollTools()">Explore tools</button><button class="btn primary" onclick="openTool('merge')">Get started</button><button class="mobile-menu" onclick="scrollTools()" aria-label="Open tools">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-art">📄</div>
+  <div class="india-badge"><span class="flag-mark" aria-hidden="true"><i></i><i></i><i></i></span> PROUDLY MADE IN INDIA</div>
+  <h1><span>All PDF Tools</span> in One Place</h1>
+  <p>Convert, merge, split, compress, edit, organize and secure your PDF files. Simple, fast and easy to use.</p>
+  <div class="upload-main"><button class="btn primary upload-btn" onclick="openTool('merge')">▣ &nbsp; Choose PDF files</button><button class="cloudbtn" title="Cloud integration coming soon" onclick="alert('Cloud storage integration can be added in a future version.')">☁</button><button class="cloudbtn" title="Cloud integration coming soon" onclick="alert('Cloud storage integration can be added in a future version.')">◈</button></div>
+  <div class="drop-note">Built for everyone, proudly made in India 🇮🇳</div>
+</section>
+<section class="section" id="tools">
+  <div class="section-head"><div><h2>Explore all PDF tools</h2><p>Everything you need to work with documents in one place.</p></div><input class="search" id="search" type="search" placeholder="⌕  Search PDF tools..." aria-label="Search tools"></div>
+  <div class="filters" id="filters"><button class="filter active" data-cat="All">All tools</button><button class="filter" data-cat="Organize">Organize PDF</button><button class="filter" data-cat="Convert">Convert PDF</button><button class="filter" data-cat="Edit">Edit PDF</button><button class="filter" data-cat="Security">PDF Security</button><button class="filter" data-cat="Image">Image tools</button></div>
+  <div class="tools" id="toolGrid"></div>
+</section>
+<section class="trust"><div class="trust-grid">
+  <div class="trust-item"><div class="trust-icon">⬟</div><div><strong>Privacy-minded</strong><span>Supported tools process files locally in your browser.</span></div></div>
+  <div class="trust-item"><div class="trust-icon">ϟ</div><div><strong>Fast and simple</strong><span>No software installation needed for this web app.</span></div></div>
+  <div class="trust-item"><div class="trust-icon">▢</div><div><strong>Works across devices</strong><span>Use it on desktop, tablet or mobile.</span></div></div>
+  <div class="trust-item"><div class="trust-icon">🇮🇳</div><div><strong>Proudly Made in India</strong><span>India-inspired branding, built for users everywhere.</span></div></div>
+</div></section>
+</main>
+<footer class="footer">
+  <div><a class="brand" href="#" style="font-size:23px;color:inherit;text-decoration:none"><span class="logo">▰</span><span>PDF<span style="color:var(--red)">Mint</span></span></a><p>All PDF tools you need, in one place.</p><p><strong style="color:#138808">🇮🇳 Proudly Made in India</strong></p><p>✦ &nbsp; ◉ &nbsp; ◎ &nbsp; ▶</p></div>
+  <div><h4>Product</h4><a href="#tools">All PDF Tools</a><a href="#tools">Merge PDF</a><a href="#tools">Compress PDF</a><a href="#tools">Convert PDF</a><a href="#tools">Edit PDF</a></div>
+  <div><h4>Company</h4><a href="#about">About PDFMint</a><a href="#privacy">Privacy</a><a href="#terms">Terms of Use</a><a href="mailto:hello@pdfhub.example">Contact Us</a></div>
+  <div><h4>Resources</h4><a href="#tools">How to merge PDFs</a><a href="#tools">How to compress PDF</a><a href="#tools">PDF guides</a><a href="#faq">FAQ</a></div>
+  <div><h4>Stay updated</h4><p>Get product news and document tips.</p><form onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓';this.querySelector('input').value='';"><input type="email" placeholder="Enter your email" required aria-label="Email address"><button class="btn primary">Subscribe</button></form></div>
+</footer>
+<div class="fineprint" id="privacy">© 2026 PDFMint. Proudly Made in India 🇮🇳. Independent demo project. Not affiliated with iLovePDF. Review privacy and security requirements before production deployment.</div>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal">
+  <div class="modal-head"><h2 id="modalTitle">Merge PDF</h2><button class="close" onclick="closeModal()" aria-label="Close">×</button></div>
+  <p class="modal-desc" id="modalDesc">Combine multiple PDF files into one document.</p>
+  <div class="dropzone" id="dropzone"><div class="big">📄</div><strong>Choose files or drop them here</strong><p class="modal-desc">Select PDF files from your device.</p><input type="file" id="fileInput" multiple accept=".pdf,application/pdf,image/png,image/jpeg,image/webp" class="hidden"><button class="btn outline" onclick="document.getElementById('fileInput').click()">Select files</button></div>
+  <div class="files-list" id="filesList"></div>
+  <div id="options" class="options"></div>
+  <div class="status" id="status" role="status"></div>
+  <div class="modal-actions"><button class="btn outline" onclick="closeModal()">Cancel</button><button class="btn primary" id="processBtn" onclick="processFiles()">Merge PDF</button></div>
+  <div class="small-note">Demo note: supported operations run in your browser using open-source libraries loaded from a CDN. Avoid using this demo for highly sensitive documents until you have audited its dependencies and deployment.</div>
+ </div>
+</div>
+<script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const tools = [
+{id:'merge',name:'Merge PDF',desc:'Combine multiple PDF files into one.',icon:'↘',color:'#ff503f',cat:'Organize',accept:'.pdf',multi:true},
+{id:'split',name:'Split PDF',desc:'Extract a page range into a new PDF.',icon:'✂',color:'#ff503f',cat:'Organize',accept:'.pdf'},
+{id:'compress',name:'Compress PDF',desc:'Try a browser-side save that may reduce file size.',icon:'▦',color:'#40b62b',cat:'Organize',accept:'.pdf'},
+{id:'pdf-word',name:'PDF to Word',desc:'Convert PDF content to an editable Word document.',icon:'W',color:'#2782ef',cat:'Convert',accept:'.pdf'},
+{id:'pdf-ppt',name:'PDF to PowerPoint',desc:'Prepare PDF pages for a presentation workflow.',icon:'P',color:'#ff6b24',cat:'Convert',accept:'.pdf'},
+{id:'pdf-excel',name:'PDF to Excel',desc:'Extract tables with a dedicated conversion engine.',icon:'X',color:'#27ae60',cat:'Convert',accept:'.pdf'},
+{id:'pdf-jpg',name:'PDF to JPG',desc:'Render PDF pages to images.',icon:'▧',color:'#f3a900',cat:'Convert',accept:'.pdf'},
+{id:'pdf-png',name:'PDF to PNG',desc:'Export PDF pages as PNG images.',icon:'▧',color:'#9a4df4',cat:'Convert',accept:'.pdf'},
+{id:'word-pdf',name:'Word to PDF',desc:'Convert Word documents to PDF.',icon:'W',color:'#2782ef',cat:'Convert',accept:'.doc,.docx'},
+{id:'ppt-pdf',name:'PowerPoint to PDF',desc:'Convert slides into a PDF document.',icon:'P',color:'#ff6b24',cat:'Convert',accept:'.ppt,.pptx'},
+{id:'excel-pdf',name:'Excel to PDF',desc:'Convert spreadsheets to PDF.',icon:'X',color:'#27ae60',cat:'Convert',accept:'.xls,.xlsx'},
+{id:'jpg-pdf',name:'JPG to PDF',desc:'Create a PDF from images.',icon:'▧',color:'#f3b800',cat:'Image',accept:'image/*',multi:true},
+{id:'html-pdf',name:'HTML to PDF',desc:'Convert a web page or HTML file to PDF.',icon:'</>',color:'#9a4df4',cat:'Convert',accept:'.html,.htm'},
+{id:'pdf-html',name:'PDF to HTML',desc:'Export document content to web format.',icon:'</>',color:'#ff7b21',cat:'Convert',accept:'.pdf'},
+{id:'rotate',name:'Rotate PDF',desc:'Rotate all pages of a PDF.',icon:'↻',color:'#9a4df4',cat:'Organize',accept:'.pdf'},
+{id:'delete',name:'Delete Pages',desc:'Remove page ranges from a PDF.',icon:'▤',color:'#f5222d',cat:'Organize',accept:'.pdf'},
+{id:'extract',name:'Extract Pages',desc:'Keep selected pages in a new PDF.',icon:'▤',color:'#3989f7',cat:'Organize',accept:'.pdf'},
+{id:'organize',name:'Organize PDF',desc:'Reorder, rotate or remove pages.',icon:'↕',color:'#ff4d78',cat:'Organize',accept:'.pdf'},
+{id:'numbers',name:'Add Page Numbers',desc:'Add simple page numbers to your PDF.',icon:'#',color:'#31b35b',cat:'Edit',accept:'.pdf'},
+{id:'watermark',name:'Add Watermark',desc:'Stamp text across each PDF page.',icon:'◈',color:'#a04cf5',cat:'Edit',accept:'.pdf'},
+{id:'edit',name:'Edit PDF',desc:'Add basic text annotations to a PDF.',icon:'✎',color:'#f43e5e',cat:'Edit',accept:'.pdf'},
+{id:'unlock',name:'Unlock PDF',desc:'Open an unlocked PDF file you own.',icon:'▣',color:'#3485f6',cat:'Security',accept:'.pdf'},
+{id:'protect',name:'Protect PDF',desc:'Password-encryption requires a dedicated backend.',icon:'▣',color:'#f5222d',cat:'Security',accept:'.pdf'},
+{id:'sign',name:'Sign PDF',desc:'Add a typed signature as text.',icon:'✍',color:'#2eb45b',cat:'Edit',accept:'.pdf'},
+{id:'compare',name:'Compare PDF',desc:'Compare documents with a specialized engine.',icon:'▤',color:'#9a4df4',cat:'Edit',accept:'.pdf',multi:true},
+{id:'ocr',name:'OCR PDF',desc:'Recognize text in scanned documents with OCR.',icon:'A',color:'#2584f5',cat:'Convert',accept:'.pdf'},
+{id:'crop',name:'Crop PDF',desc:'Adjust page margins using a PDF editor.',icon:'⌗',color:'#2bb15a',cat:'Edit',accept:'.pdf'},
+{id:'flatten',name:'Flatten PDF',desc:'Flatten annotations with a dedicated PDF engine.',icon:'▱',color:'#ff8952',cat:'Edit',accept:'.pdf'},
+{id:'repair',name:'Repair PDF',desc:'Try to open and resave a readable PDF.',icon:'⚒',color:'#f43d48',cat:'Organize',accept:'.pdf'},
+{id:'text',name:'PDF to Text',desc:'Extract text from selectable PDF pages.',icon:'T',color:'#2782ef',cat:'Convert',accept:'.pdf'},
+{id:'page-count',name:'Number Pages',desc:'Add page numbering to a PDF.',icon:'¹₂',color:'#9a4df4',cat:'Edit',accept:'.pdf'},
+{id:'scan',name:'Scan to PDF',desc:'Create a PDF from phone scans or images.',icon:'▣',color:'#ff8a18',cat:'Image',accept:'image/*',multi:true}
+];
+let activeCategory='All', activeTool='merge', selectedFiles=[];
+const $=s=>document.querySelector(s);
+function renderTools(){
+ const q=$('#search').value.toLowerCase().trim();
+ const visible=tools.filter(t=>(activeCategory==='All'||t.cat===activeCategory)&&(`${t.name} ${t.desc} ${t.cat}`).toLowerCase().includes(q));
+ $('#toolGrid').innerHTML=visible.map(t=>`<button class="tool" onclick="openTool('${t.id}')"><span class="tool-icon" style="--c:${t.color}">${t.icon}</span><span><h3>${t.name}</h3><p>${t.desc}</p></span></button>`).join('')||'<p>No tools match your search.</p>';
+}
+function scrollTools(){document.querySelector('#tools').scrollIntoView({behavior:'smooth'})}
+$('#filters').addEventListener('click',e=>{const b=e.target.closest('button[data-cat]');if(!b)return;activeCategory=b.dataset.cat;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));renderTools()});
+$('#search').addEventListener('input',renderTools);
+function openTool(id){
+ activeTool=id;selectedFiles=[];const t=tools.find(x=>x.id===id)||tools[0];
+ $('#modalTitle').textContent=t.name;$('#modalDesc').textContent=t.desc;$('#fileInput').accept=t.accept||'.pdf';$('#fileInput').multiple=t.multi||['merge','jpg-pdf','scan','compare'].includes(id);
+ $('#fileInput').value='';$('#filesList').innerHTML='';$('#status').textContent='';$('#status').className='status';$('#options').innerHTML='';$('#processBtn').textContent=({merge:'Merge PDF',split:'Split PDF',compress:'Compress PDF','jpg-pdf':'Convert to PDF',rotate:'Rotate PDF',delete:'Remove pages',extract:'Extract pages',numbers:'Add page numbers',watermark:'Add watermark',sign:'Sign PDF',text:'Extract text','pdf-jpg':'Convert to JPG','pdf-png':'Convert to PNG'}[id]||t.name);
+ if(['split','delete','extract'].includes(id))$('#options').innerHTML='<label>Page range <input id="pageRange" placeholder="e.g. 1-3,5" value="1"></label>';
+ if(id==='rotate')$('#options').innerHTML='<label>Rotation <select id="rotation"><option value="90">90° clockwise</option><option value="180">180°</option><option value="270">270° clockwise</option></select></label>';
+ if(id==='numbers'||id==='page-count')$('#options').innerHTML='<label>Starting number <input id="startNumber" type="number" value="1" min="1"></label>';
+ if(id==='watermark')$('#options').innerHTML='<label>Watermark text <input id="watermarkText" value="PDFMint" maxlength="60"></label>';
+ if(id==='sign')$('#options').innerHTML='<label>Signature text <input id="signatureText" placeholder="Your full name" maxlength="100"></label>';
+ if(id==='text')$('#options').innerHTML='<label>Output will be a .txt file</label>';
+ $('#modalBackdrop').classList.add('open');
+}
+function closeModal(){$('#modalBackdrop').classList.remove('open')}
+$('#fileInput').addEventListener('change',e=>addFiles([...e.target.files]));
+function addFiles(files){const t=tools.find(x=>x.id===activeTool);for(const f of files){if(!selectedFiles.some(x=>x.name===f.name&&x.size===f.size)){if((t.accept||'.pdf')==='image/*'&&!f.type.startsWith('image/'))continue;selectedFiles.push(f)}}renderFiles()}
+function renderFiles(){$('#filesList').innerHTML=selectedFiles.map((f,i)=>`<div class="file-row"><span>📄</span><span class="fname">${escapeHtml(f.name)}</span><span>${formatSize(f.size)}</span><button onclick="removeFile(${i})" aria-label="Remove file">×</button></div>`).join('')}
+function removeFile(i){selectedFiles.splice(i,1);renderFiles()}
+function formatSize(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';return (n/1048576).toFixed(1)+' MB'}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+const dz=$('#dropzone');dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag')});dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag');addFiles([...e.dataTransfer.files])});
+function downloadBlob(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+function parsePages(value,total){const set=new Set();for(const bit of value.split(',')){const p=bit.trim().split('-').map(Number);if(p.length===1&&p[0]>=1&&p[0]<=total)set.add(p[0]-1);else if(p.length===2&&p.every(Number.isFinite)){for(let n=Math.max(1,Math.min(...p));n<=Math.min(total,Math.max(...p));n++)set.add(n-1)}}return [...set].sort((a,b)=>a-b)}
+async function processFiles(){
+ const t=tools.find(x=>x.id===activeTool),status=$('#status'),btn=$('#processBtn');
+ if(!selectedFiles.length){status.textContent='Please select at least one file first.';status.className='status error';return}
+ btn.disabled=true;btn.textContent='Processing…';status.textContent='Working locally in your browser…';status.className='status';
+ try{
+  if(!window.PDFLib)throw new Error('PDF library did not load. Check your internet connection and refresh the page.');
+  const {PDFDocument, StandardFonts, rgb, degrees}=PDFLib;
+  const pdfTasks=['merge','split','compress','rotate','delete','extract','numbers','page-count','watermark','sign','text','repair','unlock','pdf-jpg','pdf-png','compare','edit','crop','flatten','organize'];
+  if(!pdfTasks.includes(activeTool)&&!['jpg-pdf','scan'].includes(activeTool)){
+   const msg={'pdf-word':'PDF to Word needs a document-conversion engine not included in this static demo.','pdf-ppt':'PDF to PowerPoint needs a conversion engine.','pdf-excel':'PDF to Excel needs a table extraction engine.','word-pdf':'Word to PDF needs a document conversion engine.','ppt-pdf':'PowerPoint to PDF needs a document conversion engine.','excel-pdf':'Excel to PDF needs a document conversion engine.','html-pdf':'HTML to PDF needs a rendering engine.','pdf-html':'PDF to HTML export needs a conversion engine.','ocr':'OCR needs an OCR engine such as Tesseract.','protect':'Password encryption is not implemented in this demo.','compare':'PDF visual/text comparison needs a comparison engine.','crop':'Precise crop editing is not implemented in this demo.','edit':'Full PDF text editing is not implemented in this demo.','flatten':'Flattening requires a dedicated PDF engine.','organize':'Use rotate, extract or delete pages in this demo.'};
+   throw new Error(msg[activeTool]||'This tool needs an additional processing engine. The UI is ready to connect to one.');
+  }
+  if(activeTool==='jpg-pdf'||activeTool==='scan'){
+   const out=await PDFDocument.create();
+   for(const f of selectedFiles){const bytes=await f.arrayBuffer();let img;if(f.type==='image/png')img=await out.embedPng(bytes);else if(f.type==='image/jpeg'||f.type==='image/jpg')img=await out.embedJpg(bytes);else throw new Error('For now, image-to-PDF supports JPG and PNG files.');const page=out.addPage([img.width,img.height]);page.drawImage(img,{x:0,y:0,width:img.width,height:img.height})}
+   downloadBlob(new Blob([await out.save()],{type:'application/pdf'}),'pdfmint-images.pdf');
+  }else if(activeTool==='merge'){
+   if(selectedFiles.length<2)throw new Error('Select at least two PDF files to merge.');
+   const out=await PDFDocument.create();for(const f of selectedFiles){const src=await PDFDocument.load(await f.arrayBuffer());const pages=await out.copyPages(src,src.getPageIndices());pages.forEach(p=>out.addPage(p))}
+   downloadBlob(new Blob([await out.save()],{type:'application/pdf'}),'pdfmint-merged.pdf');
+  }else if(activeTool==='compare'){throw new Error('Compare needs a specialized comparison engine.')}
+  else if(activeTool==='pdf-jpg'||activeTool==='pdf-png'){throw new Error('PDF-to-image rendering requires PDF.js, which is not included in this build yet.')}
+  else if(activeTool==='text'){
+   let all='';for(const f of selectedFiles){const doc=await PDFDocument.load(await f.arrayBuffer());all+=`--- ${f.name} ---\nThis PDF has ${doc.getPageCount()} page(s). For text extraction, connect a PDF text parser.\n\n`}
+   downloadBlob(new Blob([all],{type:'text/plain;charset=utf-8'}),'pdfmint-extracted.txt');
+  }else{
+   const f=selectedFiles[0],doc=await PDFDocument.load(await f.arrayBuffer());
+   if(activeTool==='rotate'){const angle=Number($('#rotation').value);doc.getPages().forEach(p=>p.setRotation(degrees((p.getRotation().angle+angle)%360)))}
+   else if(activeTool==='split'||activeTool==='extract'){const ids=parsePages($('#pageRange').value,doc.getPageCount());if(!ids.length)throw new Error('No valid pages in that range.');const out=await PDFDocument.create();(await out.copyPages(doc,ids)).forEach(p=>out.addPage(p));downloadBlob(new Blob([await out.save()],{type:'application/pdf'}), 'pdfmint-pages.pdf');}
+   else if(activeTool==='delete'){const ids=parsePages($('#pageRange').value,doc.getPageCount());if(!ids.length||ids.length===doc.getPageCount())throw new Error('Choose valid pages, but do not delete every page.');ids.sort((a,b)=>b-a).forEach(i=>doc.removePage(i))}
+   else if(activeTool==='numbers'||activeTool==='page-count'){const font=await doc.embedFont(StandardFonts.Helvetica),start=Number($('#startNumber').value)||1;doc.getPages().forEach((p,i)=>{const {width}=p.getSize();p.drawText(String(start+i),{x:width/2-5,y:18,size:10,font,color:rgb(.35,.38,.45)})})}
+   else if(activeTool==='watermark'){const text=$('#watermarkText').value||'PDFMint',font=await doc.embedFont(StandardFonts.HelveticaBold);doc.getPages().forEach(p=>{const {width,height}=p.getSize();p.drawText(text,{x:width*.2,y:height*.5,size:32,font,color:rgb(.78,.78,.82),opacity:.38,rotate:degrees(-25)})})}
+   else if(activeTool==='sign'){const text=$('#signatureText').value.trim();if(!text)throw new Error('Enter signature text first.');const p=doc.getPages()[doc.getPageCount()-1],font=await doc.embedFont(StandardFonts.HelveticaOblique);p.drawText(text,{x:60,y:50,size:18,font,color:rgb(.08,.2,.55)})}
+   else if(activeTool==='compress'){status.textContent='Resaving PDF… compression varies by document; this may not reduce file size.'}
+   else if(['repair','unlock'].includes(activeTool)){status.textContent='Attempting to open and resave the PDF… encrypted or severely damaged files may fail.'}
+   else throw new Error('This operation is not available in the current demo.');
+   downloadBlob(new Blob([await doc.save()],{type:'application/pdf'}),`pdfmint-${activeTool}.pdf`);
+  }
+  status.textContent='Done — your download should begin automatically.';status.className='status success';
+ }catch(err){status.textContent=err.message||'Something went wrong while processing the file.';status.className='status error'}
+ finally{btn.disabled=false;btn.textContent=({merge:'Merge PDF',split:'Split PDF',compress:'Compress PDF','jpg-pdf':'Convert to PDF',rotate:'Rotate PDF',delete:'Remove pages',extract:'Extract pages',numbers:'Add page numbers',watermark:'Add watermark',sign:'Sign PDF',text:'Extract text','pdf-jpg':'Convert to JPG','pdf-png':'Convert to PNG'}[activeTool]||t.name)}
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+renderTools();
+</script>
+</body></html>
